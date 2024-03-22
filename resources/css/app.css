@@ -1,0 +1,26 @@
+@tailwind utilities;
+@tailwind components;
+@tailwind base;
+
+nav > ul > li {
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s ease;
+}
+nav > ul > li:hover {
+    transform: scale(1.1);
+}
+nav > ul > li::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transition: width 0.2s ease;
+}
+
+nav > ul > li:hover::after {
+    width: 100%;
+}
