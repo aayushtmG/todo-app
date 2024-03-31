@@ -24,3 +24,8 @@ nav > ul > li::after {
 nav > ul > li:hover::after {
     width: 100%;
 }
+
+.todo-btn {
+    cursor: pointer;
+    transition: color 0.2s ease-out;
+}
